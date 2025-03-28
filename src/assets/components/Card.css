@@ -1,0 +1,58 @@
+.card {
+  border: 1px solid #045cff;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #51f4fa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 320px;        
+  min-height: 350px;     
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card__name {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  transition: text-shadow 0.3s ease;
+}
+
+.card__name:hover {
+  text-shadow: 0 0 8px #01389e, 0 0 12px #002363;
+}
+
+.card__email,
+.card__birthday {
+  font-size: 1rem;
+  color: #3b3b66;;
+  margin: 4px 0;
+}
+
+.card__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px auto; 
+  object-fit: cover;
+}
+
+.card__buttons {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Reducción de tamaño para los botones dentro de la tarjeta */
+.card__buttons .card__button{
+  padding: 8px 14px;
+  font-size: 17px;
+  border-radius: 20px;
+}

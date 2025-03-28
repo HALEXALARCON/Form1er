@@ -1,0 +1,38 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.form__group {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form__actions {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form__button {
+  margin-right: 8px;
+}
+
+.form__button--cancel {
+  background-color: #ccc;
+  color: #333;
+}
